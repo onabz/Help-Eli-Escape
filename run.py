@@ -47,6 +47,29 @@ def choice1():
 
 def choice1_1():
     print()
+    print("Eli takes the keys to the motorbike.")
+    print("He starts the motorbike.")
+    print("He keeps riding till he comes up to the main road.")
+    print("The main road leads to 3 coloured dirt paths:")
+    print()
+    print("choice 1:  The brown dirt path")
+    print("choice 2:  The black dirt path")
+    print("choice 3:  The grey dirt path")
+    print()
+    third_choice = input("Choose a dirt path ( 1 / 2 / 3 ): ")
+    if third_choice == '1':
+        print()
+        print("")
+    elif third_choice == '2':
+        print()
+        print("")
+    elif third_choice == '3':
+        print()
+        print("")
+
+
+
+
 
 def choice1_2():
     print()
