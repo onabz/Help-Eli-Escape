@@ -15,7 +15,7 @@ def begin_Game():
     print("Choice 1:  Turn left.")
     print("Choice 2:  Turn right.")
     print()
-    first_choice = input("What choice do you want to make? ( 1 / 2 ): ")
+    first_choice = input("What choice do you want to make? ( 1 / 2 ):\n ")
     if first_choice == '1':
         print()
         choice1()
@@ -34,7 +34,7 @@ def choice1():
     print("Choice 2:  keys to a car.")
     print("Choice 3:  keys to a boat.")
     print()
-    second_choice = input("Pick a key ( 1 / 2 / 3 ): ")
+    second_choice = input("Pick a key ( 1 / 2 / 3 ):\n ")
     if second_choice == '1':
         print()
         choice1_1()
@@ -56,7 +56,7 @@ def choice1_1():
     print("choice 2:  The black dirt path")
     print("choice 3:  The grey dirt path")
     print()
-    third_choice = input("Choose a dirt path ( 1 / 2 / 3 ): ")
+    third_choice = input("Choose a dirt path ( 1 / 2 / 3 ):\n ")
     if third_choice == '1':
         print()
         print("")
@@ -97,7 +97,7 @@ print()
 print("Eli just robbed the Central Bank of the world.")
 print("Eli is trying to escape with large bags of cash.")
 print()
-help_Eli = input("Would you like to help Eli escape from the police? (Y / N): ")
+help_Eli = input("Would you like to help Eli escape from the police? (Y / N):\n ")
 if help_Eli == 'n' or help_Eli == 'N':
     print("Eli won't be getting any help this time")
 elif help_Eli == 'y' or help_Eli == 'Y':
