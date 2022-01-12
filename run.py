@@ -236,6 +236,43 @@ def choice1_3b():
         "he ends up in the river and drowns.")
 
 
+def choice2():
+    clear()
+    print()
+    print("Eli turns right to a wide path that leads up to a house.")
+    print("He could either:")
+    print("choice 1: Try to break in from the front")
+    print("choice 2: Try to break in from the back")
+    print("choice 3: Use the hidden key under the door mat")
+    print()
+    sixth_choice = int(input("Which choice do you want? ( 1 / 2 / 3 ):\n "))
+    if sixth_choice == 1:
+        print()
+        print(
+            "He tries to break in from the front, "
+            "but the door is rock solid.")
+        print("The police catch up to him and he is arrested.")
+    elif sixth_choice == 2:
+        print()
+        print(
+            "He tries to break in from the back "
+            "by using a large rock to break the window.")
+        print(
+            "He climbs into the house to hide, "
+            "but the owner of the house raises an alarm "
+            "which gets the attention of the police near by.")
+        print("Eli surrenders.")
+    elif sixth_choice == 3:
+        print()
+        print("He uses the hidden key under the mat.")
+        print("He opens the door and makes his way into the living room to hide.")
+        print("A massive guard dog sees him.")
+        print("The dog starts barking and attacks him.")
+        print(
+            "Eli screams and tries to fight off the dog, "
+            "but the owner of the house calls the police and he is arrested")
+
+
 clear()
 print()
 print()
