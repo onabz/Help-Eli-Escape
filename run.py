@@ -1,7 +1,13 @@
+import os
+from os import system, name
 
 
+def clear():
+    os.system("cls" if os.name == "nt" else "clear")
 
-def begin_Game():
+
+def begin_game():
+    clear()
     print()
     print("Eli just robbed the Central Bank of the world.")
     print("Eli is trying to escape with large bags of cash.")
@@ -23,7 +29,9 @@ def begin_Game():
         print()
         choice2()
 
+
 def choice1():
+    clear()
     print()
     print("He turns left to a narrow path that leads him up to a shed.")
     print("He breaks open the doors to the shed.")
@@ -45,7 +53,9 @@ def choice1():
         print()
         choice1_3()
 
+
 def choice1_1():
+    clear()
     print()
     print("Eli takes the keys to the motorbike.")
     print("He starts the motorbike.")
@@ -67,11 +77,19 @@ def choice1_1():
         print()
         choice1_1c()
 
+
 def choice1_1a():
+    clear()
     print()
-    print("As Eli rides through the brown dirt path, the motorbike starts to slow down.")
-    print("So he stops by a diner in the middle of no where only to discover that he is low on fuel.")
-    print("He leaves the bike at the diner and continues on foot through the thick forest behind the diner.")
+    print(
+        "As Eli rides through the brown dirt path, "
+        "the motorbike starts to slow down.")
+    print(
+        "So he stops by a diner in the middle of no where, " 
+        "only to discover that he is low on fuel.")
+    print(
+        "He leaves the bike at the diner and continues on foot " 
+        "through the thick forest behind the diner.")
     print("The police finds his motorbike but cannot find him")
     print("Eli is able escape with all the bags of cash intact.")
     print("Eli is now a very rich man living freely.")
@@ -80,35 +98,57 @@ def choice1_1a():
     print()
     print("Click on the RUN PROGRAM button to restart the game")
 
+
 def choice1_1b():
+    clear()
     print()
     print("As he rides through the black dirt path, Eli gets to a tunnel.")
-    print("Unknown to him there are policemen waiting on the other side of the tunnel.")
-    print("As he gets closer to the other side, the police catch him by slamming into his motorbike with their cop car")
-    print("Eli falls to the ground with all his bags of cash and the police arrest him.")
+    print(
+        "Unknown to him there are policemen waiting " 
+        "on the other side of the tunnel.")
+    print(
+        "As he gets closer to the other side, the police catch him " 
+        "by slamming into his motorbike with their cop car")
+    print(
+        "Eli falls to the ground with all his bags of cash " 
+        "and the police arrest him.")
     print()
     print("That is the end of the road for Eli.")
     print()
     print()
-    begin_Game()
+    begin_game()
+
 
 def choice1_1c():
+    clear()
     print()
-    print("As he rides through the grey dirt path, his bike starts to slow down.")
+    print(
+        "As he rides through the grey dirt path, " 
+        "his bike starts to slow down.")
     print("He discovers that he is low on fuel.")
-    print("With no place to stop and refuel, the bike finally comes to a stop on the road.")
+    print(
+        "With no place to stop and refuel, "
+        "the bike finally comes to a stop on the road.")
     print("He is now on open land with no cover to hide under.")
     print("The police finally spot him.")
     print("He is arrested and all the stolen cash is recovered.")
     print()
     print()
-    begin_Game()
+    begin_game()
+
 
 def choice1_2():
+    clear()
     print()
-    print("Eli takes the keys to the car, enters the car and starts driving.")
-    print("Not long after he starts driving he hears the police sirens getting closer and the chase begins. ")
-    print("As he drives up the main road he comes to a path leading to 2 bridges: ")
+    print(
+        "Eli takes the keys to the car,"
+        "enters the car and starts driving.")
+    print(
+        "Not long after he starts driving he hears the police sirens "
+        "getting closer and the chase begins. ")
+    print(
+        "As he drives up the main road, "
+        " he comes to a path leading to 2 bridges: ")
     print()
     print("choice 1:  Bridge 1")
     print("choice 2:  Bridge 2")
@@ -121,24 +161,58 @@ def choice1_2():
         choice1_2b()
 
 
-
-
-
-
-def choice1_2():
+def choice1_2a():
+    clear()
     print()
+    print(
+        "As Eli drives through bridge 1, "
+        "the car starts to skid and then overturns.")
+    print(
+        "He climbs out of the car and starts to run across the bridge, "
+        "but the bridge is broken half way.")
+    print("The police surrounds him and he is arrested.")
+    print()
+    print()
+    begin_game()
+
+
+def choice1_2b():
+    clear()
+    print()
+    print(
+        "As Eli drives on to bridge 2, "
+        "he sees something at the end of the bridge.")
+    print(
+        "The end of the bridge has been blocked off "
+        "by a broken down fuel tanker.")
+    print("He jumps out of the car and makes a run for it.")
+    print("He is not fast enough and so the Police catch him.")
+    print()
+    print()
+    begin_game()
+
 
 def choice1_3():
+    clear()
     print()
+    print(
+        "Eli takes the keys to the boat and runs "
+        "to the nearby river where he finds the boat parked "
+        "and also a scuba gear with an oxygen tank. ")
+    print("All he has to do is to choose either: ")
+    print("choice 1:  The boat")
+    print("choice 2:  The scuba gear")
+    fifth_choice = int(input("Which would you like to choose ( 1 / 2 ):\n "))
+    if fifth_Choice == '1':
+        print()
+        choice1_3a()
+    elif fifth_Choice == '2':
+        print()
+        choice1_3b()
 
-def choice2():
-    print()
 
 
-    
-
-
-
+clear()
 print()
 print()
 print("    #####################")
@@ -151,8 +225,8 @@ print()
 print("Eli just robbed the Central Bank of the world.")
 print("Eli is trying to escape with large bags of cash.")
 print()
-help_Eli = input("Would you like to help Eli escape from the police? (Y / N):\n ")
-if help_Eli == 'n' or help_Eli == 'N':
+help_eli = input("Would you like to help Eli escape from the police? (Y / N):\n ").lower().strip()
+if help_eli == 'n':
     print("Eli won't be getting any help this time")
-elif help_Eli == 'y' or help_Eli == 'Y':
-    begin_Game()
+elif help_eli == 'y':
+    begin_game()
