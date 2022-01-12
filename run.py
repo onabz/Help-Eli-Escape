@@ -80,6 +80,18 @@ def choice1_1a():
     print()
     print("Click on the RUN PROGRAM button to restart the game")
 
+def choice1_1b():
+    print()
+    print("As he rides through the black dirt path, Eli gets to a tunnel.")
+    print("Unknown to him there are policemen waiting on the other side of the tunnel.")
+    print("As he gets closer to the other side, the police catch him by slamming into his motorbike with their cop car")
+    print("Eli falls to the ground with all his bags of cash and the police arrest him.")
+    print("")
+    print("That is the end of the road for Eli.")
+    print()
+    print()
+    begin_Game()
+
 
 
 
