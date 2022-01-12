@@ -59,13 +59,26 @@ def choice1_1():
     third_choice = input("Choose a dirt path ( 1 / 2 / 3 ):\n ")
     if third_choice == '1':
         print()
-        print("")
+        choice1_1a()
     elif third_choice == '2':
         print()
-        print("")
+        choice1_1b()
     elif third_choice == '3':
         print()
-        print("")
+        choice1_1c()
+
+def choice1_1a():
+    print()
+    print("As Eli rides through the brown dirt path, the motorbike starts to slow down.")
+    print("So he stops by a diner in the middle of no where only to discover that he is low on fuel.")
+    print("He leaves the bike at the diner and continues on foot through the thick forest behind the diner.")
+    print("The police finds his motorbike but cannot find him")
+    print("Eli is able escape with all the bags of cash intact.")
+    print("Eli is now a very rich man living freely.")
+    print()
+    print("CONGRATULATIONS. YOU WIN !!!!!")
+    print()
+    print("Click on the RUN PROGRAM button to restart the game")
 
 
 
