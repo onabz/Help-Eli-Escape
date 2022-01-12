@@ -152,6 +152,7 @@ def choice1_2():
     print()
     print("choice 1:  Bridge 1")
     print("choice 2:  Bridge 2")
+    print()
     fourth_choice = input("Choose which bridge to take ( 1 / 2 ):\n ")
     if fourth_choice == '1':
         print()
@@ -202,14 +203,37 @@ def choice1_3():
     print("All he has to do is to choose either: ")
     print("choice 1:  The boat")
     print("choice 2:  The scuba gear")
+    print()
     fifth_choice = int(input("Which would you like to choose ( 1 / 2 ):\n "))
-    if fifth_Choice == '1':
+    if fifth_choice == 1:
         print()
         choice1_3a()
-    elif fifth_Choice == '2':
+    elif fifth_choice == 2:
         print()
         choice1_3b()
 
+
+def choice1_3a():
+    clear()
+    print()
+    print("Eli takes the scuba gear.")
+    print("Decides to swim out into the river.")
+    print("Unknown to him, there is not enough oxygen in the oxygen tank.")
+    print("He drowns after swimming for a few minutes.")
+    print()
+    print()
+
+
+def choice1_3b():
+    clear()
+    print()
+    print(
+        "Eli decides to use the boat but as he moves along the river, "
+        "he discovers that there is a  huge hole in the boat. ")
+    print("The boat starts to sink very quickly.")
+    print(
+        "As he does not know how to swim, "
+        "he ends up in the river and drowns.")
 
 
 clear()
