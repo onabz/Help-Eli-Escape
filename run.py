@@ -86,11 +86,40 @@ def choice1_1b():
     print("Unknown to him there are policemen waiting on the other side of the tunnel.")
     print("As he gets closer to the other side, the police catch him by slamming into his motorbike with their cop car")
     print("Eli falls to the ground with all his bags of cash and the police arrest him.")
-    print("")
+    print()
     print("That is the end of the road for Eli.")
     print()
     print()
     begin_Game()
+
+def choice1_1c():
+    print()
+    print("As he rides through the grey dirt path, his bike starts to slow down.")
+    print("He discovers that he is low on fuel.")
+    print("With no place to stop and refuel, the bike finally comes to a stop on the road.")
+    print("He is now on open land with no cover to hide under.")
+    print("The police finally spot him.")
+    print("He is arrested and all the stolen cash is recovered.")
+    print()
+    print()
+    begin_Game()
+
+def choice1_2():
+    print()
+    print("Eli takes the keys to the car, enters the car and starts driving.")
+    print("Not long after he starts driving he hears the police sirens getting closer and the chase begins. ")
+    print("As he drives up the main road he comes to a path leading to 2 bridges: ")
+    print()
+    print("choice 1:  Bridge 1")
+    print("choice 2:  Bridge 2")
+    fourth_choice = input("Choose which bridge to take ( 1 / 2 ):\n ")
+    if fourth_choice == '1':
+        print()
+        choice1_2a()
+    elif fourth_choice == '2':
+        print()
+        choice1_2b()
+
 
 
 
