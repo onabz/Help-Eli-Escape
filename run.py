@@ -286,8 +286,14 @@ print()
 print("Eli just robbed the Central Bank of the world.")
 print("Eli is trying to escape with large bags of cash.")
 print()
-help_eli = input("Would you like to help Eli escape from the police? (Y / N):\n ").lower().strip()
-if help_eli == 'n':
-    print("Eli won't be getting any help this time")
-elif help_eli == 'y':
-    begin_game()
+while True:
+    help_eli = input("Would you like to help Eli escape from the police? (Y / N):\n ").lower().strip()
+    if help_eli not in ["y", "n"]:
+        print("That is not a valid option please try again")
+    else:
+        if help_eli == 'y':
+            begin_game()
+            break
+        else:
+            print("Eli won't be getting any help this time")
+            break
