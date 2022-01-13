@@ -21,13 +21,16 @@ def begin_game():
     print("Choice 1:  Turn left.")
     print("Choice 2:  Turn right.")
     print()
-    first_choice = int(input("What choice do you want to make? ( 1 / 2 ):\n "))
-    if first_choice == 1:
+    first_choice = input("What choice do you want to make? ( 1 / 2 ):\n ")
+    if first_choice == '1':
         print()
         choice1()
-    elif first_choice == 2:
+    elif first_choice == '2':
         print()
         choice2()
+    else:
+        if first_choice not in [1, 2]:
+            print("That is not a valid option, please try again")
 
 
 def choice1():
@@ -42,16 +45,19 @@ def choice1():
     print("Choice 2:  keys to a car.")
     print("Choice 3:  keys to a boat.")
     print()
-    second_choice = int(input("Pick a key ( 1 / 2 / 3 ):\n "))
-    if second_choice == 1:
+    second_choice = input("Pick a key ( 1 / 2 / 3 ):\n ")
+    if second_choice == '1':
         print()
         choice1_1()
-    elif second_choice == 2:
+    elif second_choice == '2':
         print()
         choice1_2()
-    elif second_choice == 3:
+    elif second_choice == '3':
         print()
         choice1_3()
+    else:
+        if second_choice not in [1, 2, 3]:
+            print("That is not a valid option, please try again")
 
 
 def choice1_1():
@@ -66,16 +72,19 @@ def choice1_1():
     print("choice 2:  The black dirt path")
     print("choice 3:  The grey dirt path")
     print()
-    third_choice = int(input("Choose a dirt path ( 1 / 2 / 3 ):\n "))
-    if third_choice == 1:
+    third_choice = input("Choose a dirt path ( 1 / 2 / 3 ):\n ")
+    if third_choice == '1':
         print()
         choice1_1a()
-    elif third_choice == 2:
+    elif third_choice == '2':
         print()
         choice1_1b()
-    elif third_choice == 3:
+    elif third_choice == '3':
         print()
         choice1_1c()
+    else:
+        if third_choice not in [1, 2, 3]:
+            print("That is not a valid option, please try again")
 
 
 def choice1_1a():
@@ -153,13 +162,16 @@ def choice1_2():
     print("choice 1:  Bridge 1")
     print("choice 2:  Bridge 2")
     print()
-    fourth_choice = int(input("Choose which bridge to take ( 1 / 2 ):\n "))
-    if fourth_choice == 1:
+    fourth_choice = input("Choose which bridge to take ( 1 / 2 ):\n ")
+    if fourth_choice == '1':
         print()
         choice1_2a()
-    elif fourth_choice == 2:
+    elif fourth_choice == '2':
         print()
         choice1_2b()
+    else:
+        if fourth_choice not in [1, 2]:
+            print("That is not a valid option, please try again")
 
 
 def choice1_2a():
@@ -204,13 +216,16 @@ def choice1_3():
     print("choice 1:  The boat")
     print("choice 2:  The scuba gear")
     print()
-    fifth_choice = int(input("Which would you like to choose ( 1 / 2 ):\n "))
-    if fifth_choice == 1:
+    fifth_choice = input("Which would you like to choose ( 1 / 2 ):\n ")
+    if fifth_choice == '1':
         print()
         choice1_3a()
-    elif fifth_choice == 2:
+    elif fifth_choice == '2':
         print()
         choice1_3b()
+    else:
+        if fifth_choice not in [1, 2]:
+            print("That is not a valid option, please try again")
 
 
 def choice1_3a():
@@ -245,14 +260,14 @@ def choice2():
     print("choice 2: Try to break in from the back")
     print("choice 3: Use the hidden key under the door mat")
     print()
-    sixth_choice = int(input("Which choice do you want? ( 1 / 2 / 3 ):\n "))
-    if sixth_choice == 1:
+    sixth_choice = input("Which choice do you want? ( 1 / 2 / 3 ):\n ")
+    if sixth_choice == '1':
         print()
         print(
             "He tries to break in from the front, "
             "but the door is rock solid.")
         print("The police catch up to him and he is arrested.")
-    elif sixth_choice == 2:
+    elif sixth_choice == '2':
         print()
         print(
             "He tries to break in from the back "
@@ -262,7 +277,7 @@ def choice2():
             "but the owner of the house raises an alarm "
             "which gets the attention of the police near by.")
         print("Eli surrenders.")
-    elif sixth_choice == 3:
+    elif sixth_choice == '3':
         print()
         print("He uses the hidden key under the mat.")
         print("He opens the door and makes his way into the living room to hide.")
@@ -271,6 +286,9 @@ def choice2():
         print(
             "Eli screams and tries to fight off the dog, "
             "but the owner of the house calls the police and he is arrested")
+    else:
+        if sixth_choice not in [1, 2, 3]:
+            print("That is not a valid option, please try again")
 
 
 clear()
