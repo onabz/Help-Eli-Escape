@@ -21,16 +21,34 @@ def begin_game():
     print("Choice 1:  Turn left.")
     print("Choice 2:  Turn right.")
     print()
-    first_choice = input("What choice do you want to make? ( 1 / 2 ):\n ")
-    if first_choice == '1':
-        print()
-        choice1()
-    elif first_choice == '2':
-        print()
-        choice2()
-    else:
-        if first_choice not in [1, 2]:
+    while True:
+        first_choice = input("What choice do you want to make? ( 1 / 2 ):\n ")
+        if first_choice not in ['1', '2']:
             print("That is not a valid option, please try again")
+        else:
+            if first_choice == '1':
+                print()
+                choice1()
+                break
+            else:
+                if first_choice == '2':
+                    print()
+                    choice2()
+                    break
+
+
+def restart_eli():
+    clear()
+    print()
+    while True:
+        start_eli = input("Would you like to try again? (Y / N):\n ").lower().strip()
+    if start_eli not in ["y", "n"]:
+        print("That is not a valid option please try again")
+    else:
+        if start_eli == 'y':
+            begin_game()
+        else:
+            print("Eli won't be getting any help this time")
 
 
 def choice1():
@@ -45,19 +63,25 @@ def choice1():
     print("Choice 2:  keys to a car.")
     print("Choice 3:  keys to a boat.")
     print()
-    second_choice = input("Pick a key ( 1 / 2 / 3 ):\n ")
-    if second_choice == '1':
-        print()
-        choice1_1()
-    elif second_choice == '2':
-        print()
-        choice1_2()
-    elif second_choice == '3':
-        print()
-        choice1_3()
-    else:
-        if second_choice not in [1, 2, 3]:
+    while True:
+        second_choice = input("Pick a key ( 1 / 2 / 3 ):\n ")
+        if second_choice not in ['1', '2', '3']:
             print("That is not a valid option, please try again")
+        else:
+            if second_choice == '1':
+                print()
+                choice1_1()
+                break
+            else:
+                if second_choice == '2':
+                    print()
+                    choice1_2()
+                    break
+                else:
+                    if second_choice == '3':
+                        print()
+                        choice1_3()
+                        break
 
 
 def choice1_1():
