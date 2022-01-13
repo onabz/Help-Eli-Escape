@@ -96,19 +96,25 @@ def choice1_1():
     print("choice 2:  The black dirt path")
     print("choice 3:  The grey dirt path")
     print()
-    third_choice = input("Choose a dirt path ( 1 / 2 / 3 ):\n ")
-    if third_choice == '1':
-        print()
-        choice1_1a()
-    elif third_choice == '2':
-        print()
-        choice1_1b()
-    elif third_choice == '3':
-        print()
-        choice1_1c()
-    else:
-        if third_choice not in [1, 2, 3]:
+    while True:
+        third_choice = input("Choose a dirt path ( 1 / 2 / 3 ):\n ")
+        if third_choice not in ['1', '2', '3']:
             print("That is not a valid option, please try again")
+        else:
+            if third_choice == '1':
+                print()
+                choice1_1a()
+                break
+            else:
+                if third_choice == '2':
+                    print()
+                    choice1_1b()
+                    break
+                else:
+                    if third_choice == '3':
+                        print()
+                        choice1_1c()
+                        break
 
 
 def choice1_1a():
