@@ -3,10 +3,17 @@ from os import system, name
 
 
 def clear():
+    """
+    Clears the screen.
+    """
     os.system("cls" if os.name == "nt" else "clear")
 
 
 def begin_game():
+    """
+    Prints messages. Provides input method for selecting from options.
+    Calls other functions based on option selected.
+    """
     clear()
     print("\nEli just robbed the Central Bank of the world.")
     print("Eli is trying to escape with large bags of cash.")
@@ -31,6 +38,10 @@ def begin_game():
 
 
 def restart_eli():
+    """
+    Prints messages. Provides input method for selecting from options.
+    Calls other functions based on option selected.
+    """
     clear()
     while True:
         start_eli = input(
@@ -45,11 +56,15 @@ def restart_eli():
             else:
                 clear()
                 print("Eli won't be getting any help this time")
-                print("Thanks for playing")
+                print("\nThanks for playing")
                 break
 
 
 def choice1():
+    """
+    Prints messages. Provides input method for selecting from options.
+    Calls other functions based on option selected.
+    """
     clear()
     print("\nHe turns left to a narrow path that leads him up to a shed.")
     print("He breaks open the doors to the shed.")
@@ -75,6 +90,10 @@ def choice1():
 
 
 def choice1_1():
+    """
+    Prints messages. Provides input method for selecting from options.
+    Calls other functions based on option selected.
+    """
     clear()
     print("\nEli takes the keys to the motorbike.")
     print("He starts the motorbike.")
@@ -100,6 +119,10 @@ def choice1_1():
 
 
 def choice1_1a():
+    """
+    Prints messages. Provides input method to continu with game.
+    Calls another function to restart game.
+    """
     clear()
     print(
         "\nAs Eli rides through the brown dirt path, "
@@ -119,6 +142,10 @@ def choice1_1a():
 
 
 def choice1_1b():
+    """
+    Prints messages. Provides input method to continue with game.
+    Calls another function to restart game.
+    """
     clear()
     print("\nAs he rides through the black dirt path, Eli gets to a tunnel.")
     print(
@@ -137,7 +164,8 @@ def choice1_1b():
 
 def choice1_1c():
     """
-    whshvjhcbvjhbvjdf
+    Prints messages. Provides input method to continue with game.
+    Calls another function to restart game.
     """
     clear()
     print(
@@ -155,6 +183,10 @@ def choice1_1c():
 
 
 def choice1_2():
+    """
+    Prints messages. Provides input method for selecting from options.
+    Calls other functions based on option selected.
+    """
     clear()
     print(
         "\nEli takes the keys to the car,"
@@ -181,6 +213,10 @@ def choice1_2():
 
 
 def choice1_2a():
+    """
+    Prints messages. Provides input method to continue with game.
+    Calls another function to restart game.
+    """
     clear()
     print(
         "\nAs Eli drives through bridge 1, "
@@ -194,6 +230,10 @@ def choice1_2a():
 
 
 def choice1_2b():
+    """
+    Prints messages. Provides input method to continue with game.
+    Calls another function to restart game.
+    """
     clear()
     print(
         "\nAs Eli drives on to bridge 2, "
@@ -208,6 +248,10 @@ def choice1_2b():
 
 
 def choice1_3():
+    """
+    Prints messages. Provides input method for selecting from options.
+    Calls other functions based on option selected.
+    """
     clear()
     print(
         "\nEli takes the keys to the boat and runs "
@@ -222,31 +266,33 @@ def choice1_3():
             print("That is not a valid option, please try again")
         else:
             if fifth_choice == '1':
-                print()
                 choice1_3a()
                 break
             else:
-                print()
                 choice1_3b()
                 break
 
 
 def choice1_3a():
+    """
+    Prints messages. Provides input method to continue with game.
+    Calls another function to restart game.
+    """
     clear()
-    print()
-    print("Eli takes the scuba gear.")
+    print("\nEli takes the scuba gear.")
     print("Decides to swim out into the river.")
     print("Unknown to him, there is not enough oxygen in the oxygen tank.")
     print("He drowns after swimming for a few minutes.")
-    print()
-    print()
-    input("Press enter to continue")
+    input("\nPress enter to continue")
     restart_eli()
 
 
 def choice1_3b():
+    """
+    Prints messages. Provides input method to continue with game.
+    Calls another function to restart game.
+    """
     clear()
-    print()
     print(
         "Eli decides to use the boat but as he moves along the river, "
         "he discovers that there is a  huge hole in the boat. ")
@@ -259,6 +305,10 @@ def choice1_3b():
 
 
 def choice2():
+    """
+    Prints messages. Provides input method for selecting from options.
+    Calls other functions based on option selected.
+    """
     clear()
     print("\nEli turns right to a wide path that leads up to a house.")
     print("He could either:")
