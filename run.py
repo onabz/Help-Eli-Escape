@@ -369,5 +369,7 @@ while True:
             begin_game()
             break
         else:
+            clear()
             print("Eli won't be getting any help this time")
+            print("Thanks for playing")
             break
