@@ -21,11 +21,11 @@ def begin_game():
     print("Choice 1:  Turn left.")
     print("Choice 2:  Turn right.")
     print()
-    first_choice = input("What choice do you want to make? ( 1 / 2 ):\n ")
-    if first_choice == '1':
+    first_choice = int(input("What choice do you want to make? ( 1 / 2 ):\n "))
+    if first_choice == 1:
         print()
         choice1()
-    elif first_choice == '2':
+    elif first_choice == 2:
         print()
         choice2()
 
@@ -42,14 +42,14 @@ def choice1():
     print("Choice 2:  keys to a car.")
     print("Choice 3:  keys to a boat.")
     print()
-    second_choice = input("Pick a key ( 1 / 2 / 3 ):\n ")
-    if second_choice == '1':
+    second_choice = int(input("Pick a key ( 1 / 2 / 3 ):\n "))
+    if second_choice == 1:
         print()
         choice1_1()
-    elif second_choice == '2':
+    elif second_choice == 2:
         print()
         choice1_2()
-    elif second_choice == '3':
+    elif second_choice == 3:
         print()
         choice1_3()
 
@@ -66,14 +66,14 @@ def choice1_1():
     print("choice 2:  The black dirt path")
     print("choice 3:  The grey dirt path")
     print()
-    third_choice = input("Choose a dirt path ( 1 / 2 / 3 ):\n ")
-    if third_choice == '1':
+    third_choice = int(input("Choose a dirt path ( 1 / 2 / 3 ):\n "))
+    if third_choice == 1:
         print()
         choice1_1a()
-    elif third_choice == '2':
+    elif third_choice == 2:
         print()
         choice1_1b()
-    elif third_choice == '3':
+    elif third_choice == 3:
         print()
         choice1_1c()
 
@@ -153,11 +153,11 @@ def choice1_2():
     print("choice 1:  Bridge 1")
     print("choice 2:  Bridge 2")
     print()
-    fourth_choice = input("Choose which bridge to take ( 1 / 2 ):\n ")
-    if fourth_choice == '1':
+    fourth_choice = int(input("Choose which bridge to take ( 1 / 2 ):\n "))
+    if fourth_choice == 1:
         print()
         choice1_2a()
-    elif fourth_choice == '2':
+    elif fourth_choice == 2:
         print()
         choice1_2b()
 
