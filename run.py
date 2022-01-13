@@ -41,14 +41,20 @@ def restart_eli():
     clear()
     print()
     while True:
-        start_eli = input("Would you like to try again? (Y / N):\n ").lower().strip()
-    if start_eli not in ["y", "n"]:
-        print("That is not a valid option please try again")
-    else:
-        if start_eli == 'y':
-            begin_game()
+        start_eli = input(
+            "Would you like to try again? "
+            "(Y / N):\n ").lower().strip()
+        if start_eli not in ["y", "n"]:
+            print("That is not a valid option please try again")
         else:
-            print("Eli won't be getting any help this time")
+            if start_eli == 'y':
+                begin_game()
+                break
+            else:
+                clear()
+                print("Eli won't be getting any help this time")
+                print("Thanks for playing")
+                break
 
 
 def choice1():
@@ -124,10 +130,10 @@ def choice1_1a():
         "As Eli rides through the brown dirt path, "
         "the motorbike starts to slow down.")
     print(
-        "So he stops by a diner in the middle of no where, " 
+        "So he stops by a diner in the middle of no where, "
         "only to discover that he is low on fuel.")
     print(
-        "He leaves the bike at the diner and continues on foot " 
+        "He leaves the bike at the diner and continues on foot "
         "through the thick forest behind the diner.")
     print("The police finds his motorbike but cannot find him")
     print("Eli is able escape with all the bags of cash intact.")
@@ -135,7 +141,8 @@ def choice1_1a():
     print()
     print("CONGRATULATIONS. YOU WIN !!!!!")
     print()
-    print("Click on the RUN PROGRAM button to restart the game")
+    input("Press enter to continue")
+    restart_eli()
 
 
 def choice1_1b():
@@ -143,26 +150,29 @@ def choice1_1b():
     print()
     print("As he rides through the black dirt path, Eli gets to a tunnel.")
     print(
-        "Unknown to him there are policemen waiting " 
+        "Unknown to him there are policemen waiting "
         "on the other side of the tunnel.")
     print(
-        "As he gets closer to the other side, the police catch him " 
+        "As he gets closer to the other side, the police catch him "
         "by slamming into his motorbike with their cop car")
     print(
-        "Eli falls to the ground with all his bags of cash " 
+        "Eli falls to the ground with all his bags of cash "
         "and the police arrest him.")
     print()
     print("That is the end of the road for Eli.")
     print()
     print()
-    begin_game()
+    restart_eli()
 
 
 def choice1_1c():
+    """
+    whshvjhcbvjhbvjdf
+    """
     clear()
     print()
     print(
-        "As he rides through the grey dirt path, " 
+        "As he rides through the grey dirt path, "
         "his bike starts to slow down.")
     print("He discovers that he is low on fuel.")
     print(
@@ -173,7 +183,7 @@ def choice1_1c():
     print("He is arrested and all the stolen cash is recovered.")
     print()
     print()
-    begin_game()
+    restart_eli()
 
 
 def choice1_2():
@@ -192,16 +202,20 @@ def choice1_2():
     print("choice 1:  Bridge 1")
     print("choice 2:  Bridge 2")
     print()
-    fourth_choice = input("Choose which bridge to take ( 1 / 2 ):\n ")
-    if fourth_choice == '1':
-        print()
-        choice1_2a()
-    elif fourth_choice == '2':
-        print()
-        choice1_2b()
-    else:
-        if fourth_choice not in [1, 2]:
+    while True:
+        fourth_choice = input("Choose which bridge to take ( 1 / 2 ):\n ")
+        if fourth_choice not in ['1', '2']:
             print("That is not a valid option, please try again")
+        else:
+            if fourth_choice == '1':
+                print()
+                choice1_2a()
+                break
+            else:
+                if fourth_choice == '2':
+                    print()
+                    choice1_2b()
+                    break
 
 
 def choice1_2a():
@@ -246,16 +260,19 @@ def choice1_3():
     print("choice 1:  The boat")
     print("choice 2:  The scuba gear")
     print()
-    fifth_choice = input("Which would you like to choose ( 1 / 2 ):\n ")
-    if fifth_choice == '1':
-        print()
-        choice1_3a()
-    elif fifth_choice == '2':
-        print()
-        choice1_3b()
-    else:
-        if fifth_choice not in [1, 2]:
+    while True:
+        fifth_choice = input("Which would you like to choose ( 1 / 2 ):\n ")
+        if fifth_choice not in ['1', '2']:
             print("That is not a valid option, please try again")
+        else:
+            if fifth_choice == '1':
+                print()
+                choice1_3a()
+                break
+            else:
+                print()
+                choice1_3b()
+                break
 
 
 def choice1_3a():
@@ -290,35 +307,42 @@ def choice2():
     print("choice 2: Try to break in from the back")
     print("choice 3: Use the hidden key under the door mat")
     print()
-    sixth_choice = input("Which choice do you want? ( 1 / 2 / 3 ):\n ")
-    if sixth_choice == '1':
-        print()
-        print(
-            "He tries to break in from the front, "
-            "but the door is rock solid.")
-        print("The police catch up to him and he is arrested.")
-    elif sixth_choice == '2':
-        print()
-        print(
-            "He tries to break in from the back "
-            "by using a large rock to break the window.")
-        print(
-            "He climbs into the house to hide, "
-            "but the owner of the house raises an alarm "
-            "which gets the attention of the police near by.")
-        print("Eli surrenders.")
-    elif sixth_choice == '3':
-        print()
-        print("He uses the hidden key under the mat.")
-        print("He opens the door and makes his way into the living room to hide.")
-        print("A massive guard dog sees him.")
-        print("The dog starts barking and attacks him.")
-        print(
-            "Eli screams and tries to fight off the dog, "
-            "but the owner of the house calls the police and he is arrested")
-    else:
-        if sixth_choice not in [1, 2, 3]:
+    while True:
+        sixth_choice = input("Which choice do you want? ( 1 / 2 / 3 ):\n ")
+        if sixth_choice not in ['1', '2', '3']:
             print("That is not a valid option, please try again")
+        else:
+            if sixth_choice == '1':
+                print()
+                print(
+                    "He tries to break in from the front, "
+                    "but the door is rock solid.")
+                print("The police catch up to him and he is arrested.")
+                break
+            elif sixth_choice == '2':
+                print()
+                print(
+                    "He tries to break in from the back "
+                    "by using a large rock to break the window.")
+                print(
+                    "He climbs into the house to hide, "
+                    "but the owner of the house raises an alarm "
+                    "which gets the attention of the police near by.")
+                print("Eli surrenders.")
+                break
+            else:
+                print()
+                print("He uses the hidden key under the mat.")
+                print(
+                    "He opens the door and makes his way "
+                    "into the living room to hide.")
+                print("A massive guard dog sees him.")
+                print("The dog starts barking and attacks him.")
+                print(
+                    "Eli screams and tries to fight off the dog, "
+                    "but the owner of the house calls the police "
+                    "and he is arrested")
+                break
 
 
 clear()
@@ -335,7 +359,9 @@ print("Eli just robbed the Central Bank of the world.")
 print("Eli is trying to escape with large bags of cash.")
 print()
 while True:
-    help_eli = input("Would you like to help Eli escape from the police? (Y / N):\n ").lower().strip()
+    help_eli = input(
+        "Would you like to help Eli escape from the police?"
+        " (Y / N):\n ").lower().strip()
     if help_eli not in ["y", "n"]:
         print("That is not a valid option please try again")
     else:
