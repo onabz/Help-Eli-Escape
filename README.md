@@ -1,155 +1,75 @@
 # Help Eli Escape
-Help Eli Escape is a text based adventure game also know as interactive fiction (IF). It runs on a terminal. The player uses text input to control the game, and the game state is relayed to the player via text output. The story is based on Eli who just robbed a bank and is trying to escape from the police. The goal of the player is to try and navigate Eli through various paths that will eventually lead Eli to freedom. 
-
-
-![Responsive Mockup](documentation/testing/ami-responsive.png)
-
-The Responsive Mockup image above shows how responsive the Vehicle quiz game is across various device screen sizes ranging from mobile devices to large monitor screens. The Vehicle quiz game is well layed out with a clear font style used across the pages. The buttons are very legible on all the screen sizes. 
+Help Eli Escape is a text based adventure game also know as interactive fiction (IF). It runs on a terminal. The player uses text input to control the game, and the game state is relayed to the player via text output. The story is based on Eli who just robbed a bank and is trying to escape from the police. The goal of the player is to try and navigate Eli through various paths that will eventually lead Eli to freedom.  
 
 ## UX
 
-### Colour Scheme Used
-I chose to go with a very rich and bright color scheme through out the site to express to the user a sense of fun and playfulness. The dark and light shades of purple compliment each other very well.The buttons are large enough to be clicked on and touched with the fingers on a touch screen. Hover effects are used on all the buttons to further enhance the legibility of the buttons and thus the user experience. On selecting the correct answer, the button turns to a very bright green color while on selecting the wrong answer it changes to a bright red color. The background color also changes color depending on whether the user selects the correct or wrong answer to further get the user engaged in the game. 
+### Terminal based game.
+This is a text based adventure game that runs on a terminal. It does not have any graphical user interface. Ontop of terminal is a "RUN PROGRAM" button that restarts the game. The name of the game "Help Eli Escape" is clearly written on the top left corner of the terminal surrounded by a border.
 
-### Typography
-
-I chose to use the font called Roboto Condensed from Google fonts throughout the website because it is a bold and striking font that not only evokes seriousness and passion, but when used along side the bright colors on the site also creates a sense of playfulness.
+![Help Eli Escape Image](documentation/eli-screenshot.png)
 
 ### Wireframes
 
-Below are sketched images of how I planned to layout the quiz game. The lines across indicate that background colors were used. The final design for the restart button is slightly different from the wireframe image because I decided to include the user score so added the restart button to the screen that shows the user score. I also added the home button below the restart button.
+Below is a sketch of the decision tree I created to help with plotting the paths and choices of the story I went with for the game. Also below are images of the entire story line used in the game.
 
-![Home Wireframe Image](documentation/wireframes/wireframe-homepage.jpg)
-![Start button Wireframe Image](documentation/wireframes/wireframes-start-button.jpg)
-![Question section Wireframe Image](documentation/wireframes/wireframes-questions-box.jpg)
-![Restart button Wireframe Image](documentation/wireframes/wireframes-restart-button.jpg)
+![Decision Tree Wireframe Image](documentation/eli_decision_tree.jpg)
+![Story1 Wireframe Image](documentation/story1.png)
+![Story2 Wireframe Image](documentation/story2.png)
+![Story3 Wireframe Image](documentation/story3.png)
 
 
 ## Features 
 
 ### Existing Features
 
-- __Play Button__
+- __Run Program Button__
 
-  - It is a large and bold button  with the word play written on it that screams click me !!!.
-  - It has a hover effect applied on it to show user that something is about to happen when they run the mouse pointer over it. It also has a box shadow effect around it to further make it stand out.  
+  - It is a large and bold button  with the words Run Program written on it.  
 
-![Play Button](documentation/testing/play-button.png)
+![Run Program Button](documentation/run-program-button.png)
 
-- __The home page__
+- __The Terminal__
 
-  - The home page features a very bright purple background color with some text to tell the user what to do which is to press the play button.
+  - The name of the game "Help Eli Escape" is clearly written on the top left corner of the terminal surrounded by a border.
  
-![Home Page](documentation/testing/home-page.png)
-
-- __The "Let's Go" button__
-
-  - The "Let's Go" button is what the user clicks to start the game. 
-  - It is a large and bold button that also screams click me !!!.
-  - The button features a hover effect in the form of a bacground color change from a dark shade of purple to a lighter shade of purple to show the user that an action is about to occur.
-
-![Let's Go Button](documentation/testing/lets-go-button.png)
-
-- __The Question and Answer Box__
-
-  - This box contains the questions written boldy in black over the white background. 
-  -  It also houses the answers contained in bold buttons which changes color to green when the answer selected is correct and to red when the wrong answer is selected.
-
-![Question Box](documentation/testing/question-box.png)
-![Correct Answer](documentation/testing/correct-answer.png)
-![Wrong Answer](documentation/testing/wrong-answer.png)
-
-  __The Next Button__
-
-  - The next button does not appear till after the first question has been answered.
-  - The next button when selected reveals the next question. 
-  - The next button is hiddened when the next question is displayed.
-
-![Next Button](documentation/testing/next-button.png)
-
-  __The User Score Screen__
-
-  - This screen is made up of the user's score area, the restart button and the home button.
-  - This screen appears after the user has answered a set of 10 questions. The user's score is calculated and displayed boldly in simple text.
-  - The user can then choose to restart the game by clicking on the restart button or to go back to the home page by clicking on the home button. 
-
-![User Score Screen](documentation/testing/user-score-screen.png)
-
-  __The Restart Button__
-
-  - The restart button, when clicked, takes the user back to the start screen with the "Let's Go" button. The user can then click on the Let's Go button which will show another set of 10 random questions for the user to answer.
-
-![Restart Button](documentation/testing/restart-button.png)
-
-- __The Home Button__
-
-  - The home button, when clicked, takes the user back to the home page with the play button.
-
-![Home Button](documentation/testing/home-button.png)
-
-### Features Left to Implement
-
-- A more interactive home page that lays out how to play the game and the features of the game.
-- The ability to save your game with a user profile.
-- A high score table showing top user scores. 
+![Terminal Image](documentation/terminal-image.png)
 
 ## Technologies Used
 
-- I used HTML to design the two web pages.
-- I used CSS to design the enitre website.
-- I used Javascript to add fuctionality to the game enabling user interaction.
-- I used Gitpod as my code editor to write all the codes used throughout the website.
+- I used Python programing language to write the code used in making the app.
+- I used Gitpod as my code editors.
 - I used Github to host my repositories.
-- I used Git for version control of the website.
-- I used Open Trivia Database to generate all the questions used in the quiz game.
-- I used the Google Chrome development tool for troubleshooting.
+- I used Git for version control of the app.
+- I used Heroku to deploy the live version of the app.
 
 ## Testing 
 
-- I confirmed that all buttons were functional.
-- I tested that the home button links back to the home page.
-- I tested the site for responsiveness making sure that it looks easy to use across all standard screen sizes using the Google chrome development tool.
-- I checked that random sets of questions were being generated each time the restart button was clicked.
-I tested that the correct user scores were displayed at the end of the game.  
+- I confirmed that the run program button was functional.
+- I checked that all input methods did not allow wrong user inputs.
+- I checked that the clear function was working properly.
+- I checked that at the end of each paths, the player could choose to restart the game or end it. 
 
 ### Validator Testing 
 
-- HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https://onabz.github.io/Vehicle-Quiz-Game/) (index.html)
- 
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https://onabz.github.io/Vehicle-Quiz-Game/game.html) (game.html)
- 
-- CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fonabz.github.io%2FVehicle-Quiz-Game%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-
-- Javascript
-  - No errors were found when passing through the [JSHint](https://jshint.com/)
+- Python
+  - No errors were found when passing through the [PEP8 online](http://pep8online.com/checkresult)
 
 ## Deployment
 The site was deployed using Heroku. The steps to deploy are as follows:
-    * On the run.py file, add a new line character at the end of the text inside the input methods, save the file and push to Github.
-    * Set up an account on Heroku.
-    * From the Heroku dashboard click the “Create new app” button and then name the app.
-    * Select your region and then click "Create app".
-    * Click on the settings tab and go to the Config vars section.
-    * Click on the "Reveal Config Vars" button.
-    * In the field for Key type PORT and in the field for Value type 8000 then click on the Add button.
-    * Next go to the Buildpacks section and click on "Add buildpack", select Python and click "Save changes".
-    * Click on the "Add buildpack" button again and this time select node.js and click "Save changes".
-    * Next click on the Deploy tab and go to the Deployment method section, select Github and click on "Connect to Github".
-    * Now search for the Github repository which is named help-eli-escape and then click on "Connect".
-    * Next click on "Enable Automatic Deploys".
-    * Click on the activity tab and wait for the status to say Build Succeeded and then click on the "Open App" button.
+  * Set up an account on Heroku.
+  * From the Heroku dashboard click the “Create new app” button and then name the app.
+  * Select your region and then click "Create app".
+  * Click on the settings tab and go to the Config vars section.
+  * Click on the "Reveal Config Vars" button.
+  * In the field for Key type PORT and in the field for Value type 8000 then click on the Add button.
+  * Next go to the Buildpacks section and click on "Add buildpack", select Python and click "Save changes".
+  * Click on the "Add buildpack" button again and this time select node.js and click "Save changes".
+  * Next click on the Deploy tab and go to the Deployment method section, select Github and click on "Connect to Github".
+  * Now search for the Github repository which is named help-eli-escape and then click on "Connect".
+  * Next click on "Enable Automatic Deploys".
+  * Click on the activity tab and wait for the status to say Build Succeeded and then click on the "Open App" button.
 
 The live link can be found here - https://help-eli-escape.herokuapp.com/
-
-The site was deployed to GitHub pages. The steps to deploy are as follows:
-    * In the [GitHub repository](https://github.com/onabz/Vehicle-Quiz-Game), navigate to the Settings tab.
-    * From the Settings tab, scroll down until you see the 'Pages' button on the left.
-    * From the Source section drop-down menu, select the `Main` branch.
-    * Once the `Main` branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-
-The live link can be found here - https://onabz.github.io/Vehicle-Quiz-Game/
 
 ### Local Deployment
 
