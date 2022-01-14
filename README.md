@@ -126,6 +126,22 @@ I tested that the correct user scores were displayed at the end of the game.
   - No errors were found when passing through the [JSHint](https://jshint.com/)
 
 ## Deployment
+The site was deployed using Heroku. The steps to deploy are as follows:
+    * On the run.py file, add a new line character at the end of the text inside the input methods, save the file and push to Github.
+    * Set up an account on Heroku.
+    * From the Heroku dashboard click the “Create new app” button and then name the app.
+    * Select your region and then click "Create app".
+    * Click on the settings tab and go to the Config vars section.
+    * Click on the "Reveal Config Vars" button.
+    * In the field for Key type PORT and in the field for Value type 8000 then click on the Add button.
+    * Next go to the Buildpacks section and click on "Add buildpack", select Python and click "Save changes".
+    * Click on the "Add buildpack" button again and this time select node.js and click "Save changes".
+    * Next click on the Deploy tab and go to the Deployment method section, select Github and click on "Connect to Github".
+    * Now search for the Github repository which is named help-eli-escape and then click on "Connect".
+    * Next click on "Enable Automatic Deploys".
+    * Click on the activity tab and wait for the status to say Build Succeeded and then click on the "Open App" button.
+
+The live link can be found here - https://help-eli-escape.herokuapp.com/
 
 The site was deployed to GitHub pages. The steps to deploy are as follows:
     * In the [GitHub repository](https://github.com/onabz/Vehicle-Quiz-Game), navigate to the Settings tab.
