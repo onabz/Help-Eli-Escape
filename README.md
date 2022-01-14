@@ -17,7 +17,6 @@ Below is a sketch of the decision tree I created to help with plotting the paths
 ![Story2 Wireframe Image](documentation/story2.png)
 ![Story3 Wireframe Image](documentation/story3.png)
 
-
 ## Features 
 
 ### Existing Features
@@ -71,66 +70,14 @@ The site was deployed using Heroku. The steps to deploy are as follows:
 
 The live link can be found here - https://help-eli-escape.herokuapp.com/
 
-### Local Deployment
-
-To make a local copy of this project, you can clone it by typing the following in your IDE terminal:
-
-- `git clone https://github.com/onabz/Vehicle-Quiz-Game.git`
-
-Alternatively, if using Gitpod, you can click the green Gitpod button, or use [this link](https://gitpod.io/#https://github.com/onabz/Vehicle-Quiz-Game)
-
 ## Credits 
  
 ### Content 
 
-- Many of the Javascript functions used in making the quiz functional were from [Build A Quiz App With JavaScript](https://www.youtube.com/watch?v=riDzcEQbX6k)
-- Steps on how to style the user score text were from [Create a Quiz App using HTML CSS & JavaScript | Quiz Web App using JavaScript](https://www.youtube.com/watch?v=CqddbIrEM5I&t=933s)
-- The line of code I used to create the restart button was from [Reload Page - HTML - Javascript lesson 4](https://www.youtube.com/watch?v=SQFwFjMUgUc)
-- Explanations on how to go about calculating the user scores and displaying them were from my Menthor Tim Nelson. 
-- The font used throughout the site called Roboto Condensed was from Google fonts [Google Fonts](https://fonts.google.com/specimen/Roboto+Condensed?preview.text=muscle%20gains%20power%20lifitng&preview.text_type=custom&query=roboto+#standard-styles)
-- All the questions used in the quiz game were generated from  [Open Trivia Database](https://opentdb.com/api_config.php)
+- The layout for my code was from [Simple Python Project | Text-Based Adventure Game: Time Unraveled](https://www.youtube.com/watch?v=ypNFNr72Xe8&t=209s)
+- The clear function was from [Stackoverflow](https://stackoverflow.com/questions/2084508/clear-terminal-in-python)
 
 ### Acknowledgements
 
 - I would like to thank my Mentor Tim Nelson for his invaluable support all through this project. I would not have been able to put all this together if not for his patience and insight.
 - I would like to thank [Student Care](https://learn.codeinstitute.net/ci_support/diplomainsoftwaredevelopmentecommerce/studentcare) for their regular check up on me to ensure that I was always on track to completing this project and to reassure me that they were always available if I needed any help.
-
-
-
-
-
-
-
-
-
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome onabz,
-
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
-
-## Reminders
-
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
