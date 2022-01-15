@@ -258,8 +258,8 @@ def choice1_3():
         "to the nearby river where he finds the boat parked "
         "and also a scuba gear with an oxygen tank. ")
     print("All he has to do is to choose either: ")
-    print("choice 1:  The boat")
-    print("choice 2:  The scuba gear")
+    print("choice 1:  The scuba gear")
+    print("choice 2:  The boat")
     while True:
         fifth_choice = input("Which would you like to choose ( 1 / 2 ):\n ")
         if fifth_choice not in ['1', '2']:
