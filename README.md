@@ -1,16 +1,16 @@
 # Help Eli Escape
-Help Eli Escape is a text based adventure game also know as interactive fiction (IF). It runs on a terminal. The player uses text input to control the game, and the game state is relayed to the player via text output. The story is based on Eli who just robbed a bank and is trying to escape from the police. The goal of the player is to try and navigate Eli through various paths that will eventually lead Eli to freedom.  
+Help Eli Escape is a text based adventure game also known as interactive fiction (IF). It runs on a terminal. The player uses text input to control the game and the game state is relayed to the player via text output. The story is based on Eli who just robbed a bank and is trying to escape from the police. The goal of the player is to try and navigate Eli through various paths, one of which will eventually lead Eli to freedom.  
 
 ## UX
 
 ### Terminal based game.
-This is a text based adventure game that runs on a terminal. It does not have any graphical user interface. Ontop of terminal is a "RUN PROGRAM" button that restarts the game. The name of the game "Help Eli Escape" is clearly written on the top left corner of the terminal surrounded by a border.
+This is a text based adventure game that runs on a terminal. It does not have any graphical user interface. Above the terminal is a "RUN PROGRAM" button that restarts the game. The name of the game "Help Eli Escape" is clearly written in the top left corner of the terminal surrounded by a border. Beneath it is a brief introduction of the game and an input method to start or end the game.
 
 ![Help Eli Escape Image](documentation/eli-screenshot.png)
 
 ### Wireframes
 
-Below is a sketch of the decision tree I created to help with plotting the paths and choices of the story I went with for the game. Also below are images of the entire story line used in the game.
+Below is a sketch of the decision tree I created to help with plotting the paths and choices for the story of the game. Also below are images of the entire story line used in the game. Some of the story lines of the live game are slightly modified from that on the diagram below in order to make the story flow better. 
 
 ![Decision Tree Wireframe Image](documentation/eli_decision_tree.jpg)
 ![Story1 Wireframe Image](documentation/story1.png)
@@ -29,15 +29,15 @@ Below is a sketch of the decision tree I created to help with plotting the paths
 
 - __The Terminal__
 
-  - The name of the game "Help Eli Escape" is clearly written on the top left corner of the terminal surrounded by a border.
+  - The name of the game "Help Eli Escape" is clearly written in the top left corner of the terminal surrounded by a border.
  
 ![Terminal Image](documentation/terminal-image.png)
 
 ## Technologies Used
 
 - I used Python programing language to write the code used in making the app.
-- I used Gitpod as my code editors.
-- I used Github to host my repositories.
+- I used Gitpod as my code editor.
+- I used Github to host my repository.
 - I used Git for version control of the app.
 - I used Heroku to deploy the live version of the app.
 
@@ -58,7 +58,7 @@ The site was deployed using Heroku. The steps to deploy are as follows:
   * Set up an account on Heroku.
   * From the Heroku dashboard click the “Create new app” button and then name the app.
   * Select your region and then click "Create app".
-  * Click on the settings tab and go to the Config vars section.
+  * Click on the settings tab and go to the Config Vars section.
   * Click on the "Reveal Config Vars" button.
   * In the field for Key type PORT and in the field for Value type 8000 then click on the Add button.
   * Next go to the Buildpacks section and click on "Add buildpack", select Python and click "Save changes".
