@@ -45,13 +45,19 @@ Below is a sketch of the decision tree I created to help with plotting the paths
 
 - I confirmed that the run program button was functional.
 - I checked that all input methods did not allow wrong user inputs.
+![Input validation screenshot](documentation/input_validation.png)
 - I checked that the clear function was working properly.
-- I checked that at the end of each paths, the player could choose to restart the game or end it. 
+- I checked that at the end of each path, the player could choose to restart the game or end it.
+![Continue screenshot](documentation/continue-screensnhot.png)
+![Try again screenshot](documentation/try-again-screenshot.png)
+![Continue screenshot2](documentation/continue-screenshot2.png)
+![Try again screenshot](documentation/try-again-screenshot.png) 
 
 ### Validator Testing 
 
 - Python
   - No errors were found when passing through the [PEP8 online](http://pep8online.com/checkresult)
+  ![PEP8 online screenshot](documentation/pep8-validation.png)
 
 ## Deployment
 The site was deployed using Heroku. The steps to deploy are as follows:
