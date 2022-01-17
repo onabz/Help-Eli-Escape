@@ -33,6 +33,27 @@ Below is a sketch of the decision tree I created to help with plotting the paths
  
 ![Terminal Image](documentation/terminal-image.png)
 
+- __User Input Validation__
+
+  - Each input method checks for incorrect user input. It will not permit the user to continue until they type in the correct user input. 
+ 
+![Input validation Screenshot](documentation/input_validation.png)
+
+- __User Choices__
+
+  - The story leads the user to various paths where they get to choose a path from the list of options displayed. Some paths have 2 options and others 3 options. 
+ 
+![2 Option Screenshot](documentation/options-2.png)
+![3 Option Screenshot](documentation/options.png)
+
+- __Try Again Option__
+
+  - At the final end of each path, after pressing the enter button to continue, the user is presented with the option to try again or end the game.
+
+![Continue screenshot2](documentation/continue-screenshot2.png) 
+![Try Again](documentation/try-again-screenshot.png)
+![End Game](documentation/end-game.png)
+
 ## Technologies Used
 
 - I used Python programing language to write the code used in making the app.
