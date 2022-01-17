@@ -70,6 +70,15 @@ The site was deployed using Heroku. The steps to deploy are as follows:
 
 The live link can be found here - https://help-eli-escape.herokuapp.com/
 
+### Local Deployment
+
+To make a local copy of this project, you can clone it by typing the following in your IDE terminal:
+
+- `git clone https://github.com/onabz/Help-Eli-Escape.git`
+
+Alternatively, if using Gitpod, you can click the green Gitpod button, or use [this link](https://gitpod.io/#https://github.com/onabz/Help-Eli-Escape)
+
+
 ## Credits 
  
 ### Content 
