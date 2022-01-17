@@ -23,19 +23,21 @@ Below is a sketch of the decision tree I created to help with plotting the paths
 
 - __Run Program Button__
 
-  - It is a large and bold button  with the words Run Program written on it.  
+  - It is a large and bold button  with the words Run Program written on it. 
+  - It Restarts the game when pressed. 
 
 ![Run Program Button](documentation/run-program-button.png)
 
 - __The Terminal__
 
   - The name of the game "Help Eli Escape" is clearly written in the top left corner of the terminal surrounded by a border.
+  - A small introduction is given before the user input option to either start or end the game.
  
 ![Terminal Image](documentation/terminal-image.png)
 
 - __User Input Validation__
 
-  - Each input method checks for incorrect user input. It will not permit the user to continue until they type in the correct user input. 
+  - Each input method checks for incorrect user input. It will not permit the user to continue until a correct user input is made. 
  
 ![Input validation Screenshot](documentation/input_validation.png)
 
@@ -66,7 +68,7 @@ Below is a sketch of the decision tree I created to help with plotting the paths
 
 ## Testing 
 
-- I confirmed that the run program button was functional.
+- I confirmed that the run program button was functional. Each time I clicked on it, it restarted the game.
 - I checked that all input methods did not allow wrong user inputs.
 ![Input validation screenshot](documentation/input_validation.png)
 - I checked that the clear function was working properly.
