@@ -61,6 +61,8 @@ Below is a sketch of the decision tree I created to help with plotting the paths
 - I used Github to host my repository.
 - I used Git for version control of the app.
 - I used Heroku to deploy the live version of the app.
+- I used the PEP8 online check to validate my code.
+- I used Snip and Sketch tool for taking screenshots.
 
 ## Testing 
 
